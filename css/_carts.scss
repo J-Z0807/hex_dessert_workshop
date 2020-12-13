@@ -1,0 +1,54 @@
+.carts_commodity_photo {
+    height: 110px;
+    width: 110px;
+}
+
+.commodity_list {
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type="number"] {
+        border: 1px solid $customize_lightgreen;
+        -moz-appearance: textfield;
+    }
+
+    .fa-trash {
+        cursor: pointer;
+
+        &:hover {
+            color: $customize_green;
+        }
+    }
+
+    .commodity_number {
+        input {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+/* 響應式 */
+@media (max-width: 426px) {
+    .commodity_list {
+        .commodity_number {
+            input {
+                height: auto;
+            }
+        }
+    }
+
+    .buy_detail {
+        background-color: unset !important;
+        color: $customize_darkgreen !important;
+
+        .title {
+            background-color: $customize_lightgreen !important;
+            border: unset !important;
+            padding-top: 24px !important;
+        }
+    }
+}

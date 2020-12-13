@@ -1,0 +1,151 @@
+.home-banner {
+    height: 496px;
+
+    background-image: url('https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=925&q=80');
+}
+
+/*開頭選項區*/
+.home-item-card {
+    position: relative;
+    width: 260px;
+    height: 256px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.home-item-card-text {
+    writing-mode: vertical-rl;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: $customize_white;
+    z-index: 1;
+}
+
+.home-item-card-active {
+    .home-item-card-text {
+        color: $customize_darkgreen;
+    }
+}
+
+.home-gradual-bg {
+    width: 100%;
+    height: 256px;
+    position: absolute;
+    background-color: $customize_darkgreen;
+    opacity: 0.8;
+
+    &:hover {
+        background-color: $customize_yellow;
+        transition: background-color .5s;
+    }
+}
+
+
+/*中間介紹區*/
+.home-introduction-area {
+    max-height: 420px;
+
+    .title-photo {
+        position: relative;
+        top: -30px;
+        left: 5%;
+    }
+}
+
+.home-introduction-picture-left,
+.home-introduction-picture-right {
+    position: relative;
+    top: -20px;
+    left: 5%;
+    height: 460px;
+    max-width: 460px;
+}
+
+.home-introduction-picture-right {
+    left: 0;
+}
+
+.home-introduction-text {
+    writing-mode: vertical-rl;
+    letter-spacing: 10px;
+    color: $customize_green;
+    word-wrap: break-word;
+    max-height: 420px;
+}
+
+/*最底下商品區*/
+.home-commodity-sm-title {
+    display: none !important;
+}
+
+.home-commodity-card {
+    height: auto;
+
+    .home-commodity-card-img {
+        position: relative;
+        height: 315px;
+    }
+
+    .home-recommend_card {
+        writing-mode: vertical-rl;
+        letter-spacing: 5px;
+    }
+
+    .fa-heart {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 22px;
+        cursor: pointer;
+
+        &:hover {
+            color: lighten($customize_darkgreen, 30%);
+        }
+    }
+}
+
+/*響應式*/
+@media (max-width: 768px) {
+    .home-introduction-picture-left {
+        height: 300px;
+        top: 50px;
+        left: 10px;
+    }
+
+    .home-introduction-picture-right {
+        height: 300px;
+        top: 50px;
+        left: 45px;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .home-introduction-picture-left,
+    .home-introduction-picture-right {
+        top: 0;
+        left: 0;
+    }
+
+    .home-introduction-area {
+        max-height: unset;
+    }
+
+    .home-item-card {
+        margin-right: 0;
+        border-right: 1px solid white;
+    }
+
+    .home-introduction-text {
+        writing-mode: horizontal-tb;
+        letter-spacing: 0;
+    }
+
+    .home-commodity-lg-title {
+        display: none !important;
+    }
+
+    .home-commodity-sm-title {
+        display: flex !important;
+    }
+}

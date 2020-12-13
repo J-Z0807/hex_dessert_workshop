@@ -1,0 +1,46 @@
+/* 基本設定 及 導覽 及 頁尾設定*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $customize_darkgreen;
+}
+
+a:link {
+    color: $customize_darkgreen;
+}
+
+.fa-shopping-cart,
+.fa-envelope {
+    font-size: 20px;
+}
+
+/* HTML class*/
+footer {
+    .email_input {
+        height: 56px;
+    }
+}
+
+.bg-cover {
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+/* 響應式 */
+@media (max-width: 426px) {
+    footer {
+        .subscription_area {
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+            .subscription-left-area {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

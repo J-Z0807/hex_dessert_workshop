@@ -1,0 +1,42 @@
+a {
+    text-decoration: none !important;
+}
+
+.products-banner {
+    height: 496px;
+    background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80);
+
+    img {
+        float: right;
+    }
+}
+
+.products-menu {
+    font-size: 24px;
+}
+
+.products-item-card {
+    width: 300px;
+
+    .products-item-card-img {
+        position: relative;
+        height: 315px;
+    }
+
+    .products-recommend_card {
+        writing-mode: vertical-rl;
+        letter-spacing: 5px;
+    }
+
+    .fa-heart {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 22px;
+        cursor: pointer;
+
+        &:hover {
+            color: lighten($customize_darkgreen, 30%);
+        }
+    }
+}
