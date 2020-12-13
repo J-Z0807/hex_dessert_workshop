@@ -1,0 +1,30 @@
+{
+  "name": "hex_dessert_workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-pug": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Z0807/hex_dessert_workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Z0807/hex_dessert_workshop/issues"
+  },
+  "homepage": "https://github.com/J-Z0807/hex_dessert_workshop#readme"
+}
