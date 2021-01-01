@@ -1,3 +1,41 @@
+/* 以下為自訂義色彩 */
+$customize_white: #FFFFFF !default;
+$customize_yellow :#FFE180 !default;
+$customize_dark2green: #2C4832 !default;
+$customize_green: #8DA291 !default;
+
+.bg-customize_yellow {
+    background-color: $customize_yellow !important;
+}
+
+.btn-customize_yellow {
+    background-color: $customize_yellow !important;
+
+    &:hover {
+        background-color: darken($color: $customize_yellow, $amount: 10%) !important;
+    }
+}
+
+.text-customize_green {
+    color: $customize_green;
+}
+
+.text-customize_white {
+    color: $customize_white;
+}
+
+.bg-customize_white {
+    background-color: $customize_white;
+
+    &:hover {
+        background-color: darken($color: $customize_white, $amount: 10%) !important;
+    }
+}
+
+.text-customize_dark2green {
+    color: $customize_dark2green;
+}
+
 /* 基本設定 及 導覽 及 頁尾設定*/
 *,
 *::before,
@@ -6,11 +44,15 @@
 }
 
 body {
-    color: $customize_darkgreen;
+    color: $primary;
 }
 
-a:link {
-    color: $customize_darkgreen;
+input {
+    background-color: $success !important;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .fa-shopping-cart,

@@ -56,21 +56,14 @@ $colors: map-merge(("blue": $blue,
         "gray-dark": $gray-800),
     $colors);
 
-$primary: $blue !default; //$blue !default;
+$primary: #3F5D45 !default; //$blue !default;
 $secondary: $gray-600 !default;
-$success: $green !default;
+$success: #EAF0ED !default; //$green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
-/* 以下為自訂義色彩 */
-$customize_white: #FFFFFF !default;
-$customize_yellow :#FFE180 !default;
-$customize_darkgreen: #3F5D45 !default;
-$customize_dark2green: #2C4832 !default;
-$customize_lightgreen: #EAF0ED !default;
-$customize_green: #8DA291 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(("primary": $primary,
@@ -80,15 +73,7 @@ $theme-colors: map-merge(("primary": $primary,
         "warning": $warning,
         "danger": $danger,
         "light": $light,
-        "dark": $dark,
-        /* 以下為自訂義色彩 */
-        "customize_white": $customize_white,
-        "customize_yellow": $customize_yellow,
-        "customize_darkgreen": $customize_darkgreen,
-        "customize_dark2green": $customize_dark2green,
-        "customize_lightgreen": $customize_lightgreen,
-        "customize_green": $customize_green,
-    ),
+        "dark": $dark),
     $theme-colors);
 
 // Set a specific jump point for requesting color jumps
@@ -809,7 +794,7 @@ $pagination-padding-y-lg: .75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 $pagination-line-height: 1.25 !default;
 
-$pagination-color: $customize_darkgreen !default; //$link-color !default;
+$pagination-color: $link-color !default;
 $pagination-bg: $white !default;
 $pagination-border-width: $border-width !default;
 $pagination-border-color: $gray-300 !default;
@@ -817,12 +802,12 @@ $pagination-border-color: $gray-300 !default;
 $pagination-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: $customize_darkgreen !default; //$link-hover-color !default;
+$pagination-hover-color: $link-hover-color !default;
 $pagination-hover-bg: $gray-200 !default;
 $pagination-hover-border-color: $gray-300 !default;
 
-$pagination-active-color: $customize_white !default; //$component-active-color !default;
-$pagination-active-bg: $customize_darkgreen !default; //$component-active-bg !default;
+$pagination-active-color: $component-active-color !default;
+$pagination-active-bg: $component-active-bg !default;
 $pagination-active-border-color: $pagination-active-bg !default;
 
 $pagination-disabled-color: $gray-600 !default;
@@ -1031,10 +1016,10 @@ $list-group-border-radius: $border-radius !default;
 $list-group-item-padding-y: .75rem !default;
 $list-group-item-padding-x: 1.25rem !default;
 
-$list-group-hover-bg: $customize_lightgreen !default; // !default;
-$list-group-active-color: $customize_darkgreen !default; //$component-active-color !default;
-$list-group-active-bg: $customize_lightgreen !default; //$component-active-bg !default;
-$list-group-active-border-color: $customize_lightgreen !default; //$list-group-active-bg !default;
+$list-group-hover-bg: $gray-100 !default;
+$list-group-active-color: $primary !default; //$component-active-color !default;
+$list-group-active-bg: $success !default; //$component-active-bg !default;
+$list-group-active-border-color: $list-group-active-bg !default;
 
 $list-group-disabled-color: $gray-600 !default;
 $list-group-disabled-bg: $list-group-bg !default;

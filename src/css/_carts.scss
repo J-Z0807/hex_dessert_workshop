@@ -11,8 +11,9 @@
     }
 
     input[type="number"] {
-        border: 1px solid $customize_lightgreen;
+        border: 1px solid $success;
         -moz-appearance: textfield;
+        background-color: unset !important;
     }
 
     .fa-trash {
@@ -43,10 +44,10 @@
 
     .buy_detail {
         background-color: unset !important;
-        color: $customize_darkgreen !important;
+        color: $primary !important;
 
         .title {
-            background-color: $customize_lightgreen !important;
+            background-color: $success !important;
             border: unset !important;
             padding-top: 24px !important;
         }

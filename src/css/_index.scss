@@ -23,7 +23,7 @@
 
 .home-item-card-active {
     .home-item-card-text {
-        color: $customize_darkgreen;
+        color: $primary;
     }
 }
 
@@ -31,7 +31,7 @@
     width: 100%;
     height: 256px;
     position: absolute;
-    background-color: $customize_darkgreen;
+    background-color: $primary;
     opacity: 0.8;
 
     &:hover {
@@ -99,7 +99,7 @@
         cursor: pointer;
 
         &:hover {
-            color: lighten($customize_darkgreen, 30%);
+            color: lighten($primary, 30%);
         }
     }
 }

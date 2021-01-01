@@ -1,7 +1,3 @@
-a {
-    text-decoration: none !important;
-}
-
 .products-banner {
     height: 496px;
     background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80);
@@ -36,7 +32,7 @@ a {
         cursor: pointer;
 
         &:hover {
-            color: lighten($customize_darkgreen, 30%);
+            color: lighten($primary, 30%);
         }
     }
 }
