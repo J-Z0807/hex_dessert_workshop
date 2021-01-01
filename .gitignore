@@ -9,7 +9,5 @@ node_modules
 # sass cache
 .sass-cache
 *.css.map
-# .publish cache
-.publish
 # build dir
-public
+.publish

@@ -6,7 +6,7 @@ gulp.task('build', () => {
 
 return gulp.src('./src/**/*')
 
-.pipe(gulp.dest('./public/'))
+// .pipe(gulp.dest('./public/'))
 
 .pipe(ghPages());
 
