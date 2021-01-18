@@ -1,0 +1,7 @@
+/*flex*/
+@media(max-width:426px) {
+    .flex-column-sm-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
