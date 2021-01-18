@@ -43,31 +43,20 @@
 
 /*中間介紹區*/
 .home-introduction-area {
-    max-height: 420px;
-
     .title-photo {
-        position: relative;
-        top: -30px;
-        left: 5%;
+        margin-top: -30px;
     }
 }
 
-.home-introduction-picture-left,
-.home-introduction-picture-right {
-    position: relative;
-    top: -20px;
-    left: 5%;
-    height: 460px;
-    max-width: 460px;
-}
-
-.home-introduction-picture-right {
-    left: 0;
+.home-introduction-picture {
+    min-height: 250px;
+    margin-top: -30px;
+    margin-bottom: -30px;
 }
 
 .home-introduction-text {
     writing-mode: vertical-rl;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: $customize_green;
     word-wrap: break-word;
     max-height: 420px;
@@ -105,42 +94,17 @@
 }
 
 /*響應式*/
-@media (max-width: 768px) {
-    .home-introduction-picture-left {
-        height: 300px;
-        top: 50px;
-        left: 10px;
+@media (max-width: 767px) {
+    .home-introduction-text {
+        writing-mode: unset;
     }
 
-    .home-introduction-picture-right {
-        height: 300px;
-        top: 50px;
-        left: 45px;
+    .home-introduction-picture {
+        margin: 0;
     }
 }
 
 @media (max-width: 426px) {
-
-    .home-introduction-picture-left,
-    .home-introduction-picture-right {
-        top: 0;
-        left: 0;
-    }
-
-    .home-introduction-area {
-        max-height: unset;
-    }
-
-    .home-item-card {
-        margin-right: 0;
-        border-right: 1px solid white;
-    }
-
-    .home-introduction-text {
-        writing-mode: horizontal-tb;
-        letter-spacing: 0;
-    }
-
     .home-commodity-lg-title {
         display: none !important;
     }

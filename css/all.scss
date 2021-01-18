@@ -1,8 +1,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "helpers/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "_variable";
+@import "_colors";
 @import "_base";
-@import "_login";
+@import "_grid";
+@import "_images";
+@import "_icons";
+@import "_layout";
 @import "_carts";
 @import "_products";
 @import "_index";

@@ -12376,7 +12376,6 @@ a.text-dark:hover, a.text-dark:focus {
   color: #2C4832;
 }
 
-/* 基本設定 及 導覽 及 頁尾設定*/
 *,
 *::before,
 *::after {
@@ -12396,14 +12395,17 @@ a {
   text-decoration: none !important;
 }
 
-.fa-shopping-cart,
-.fa-envelope {
-  font-size: 20px;
-}
-
-/* HTML class*/
-footer .email_input {
-  height: 56px;
+/*flex*/
+@media (max-width: 426px) {
+  .flex-column-sm-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .bg-cover {
@@ -12411,25 +12413,13 @@ footer .email_input {
   background-position: center center !important;
 }
 
-/* 響應式 */
-@media (max-width: 426px) {
-  footer .subscription_area {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  footer .subscription_area .subscription-left-area {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-  }
+.fa-shopping-cart,
+.fa-envelope {
+  font-size: 20px;
 }
 
-/* 響應式 */
-@media (max-width: 768px) {
-  .login-method .title {
-    font-size: 20px;
-  }
+footer .email_input {
+  height: 56px;
 }
 
 .carts_commodity_photo {
@@ -12488,10 +12478,6 @@ footer .email_input {
 
 .products-menu {
   font-size: 24px;
-}
-
-.products-item-card {
-  width: 300px;
 }
 
 .products-item-card .products-item-card-img {
@@ -12561,34 +12547,21 @@ footer .email_input {
 }
 
 /*中間介紹區*/
-.home-introduction-area {
-  max-height: 420px;
-}
-
 .home-introduction-area .title-photo {
-  position: relative;
-  top: -30px;
-  left: 5%;
+  margin-top: -30px;
 }
 
-.home-introduction-picture-left,
-.home-introduction-picture-right {
-  position: relative;
-  top: -20px;
-  left: 5%;
-  height: 460px;
-  max-width: 460px;
-}
-
-.home-introduction-picture-right {
-  left: 0;
+.home-introduction-picture {
+  min-height: 250px;
+  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
 .home-introduction-text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   color: #8DA291;
   word-wrap: break-word;
   max-height: 420px;
@@ -12628,38 +12601,18 @@ footer .email_input {
 }
 
 /*響應式*/
-@media (max-width: 768px) {
-  .home-introduction-picture-left {
-    height: 300px;
-    top: 50px;
-    left: 10px;
+@media (max-width: 767px) {
+  .home-introduction-text {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
   }
-  .home-introduction-picture-right {
-    height: 300px;
-    top: 50px;
-    left: 45px;
+  .home-introduction-picture {
+    margin: 0;
   }
 }
 
 @media (max-width: 426px) {
-  .home-introduction-picture-left,
-  .home-introduction-picture-right {
-    top: 0;
-    left: 0;
-  }
-  .home-introduction-area {
-    max-height: unset;
-  }
-  .home-item-card {
-    margin-right: 0;
-    border-right: 1px solid white;
-  }
-  .home-introduction-text {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-    letter-spacing: 0;
-  }
   .home-commodity-lg-title {
     display: none !important;
   }

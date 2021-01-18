@@ -1,0 +1,31 @@
+.bg-customize_yellow {
+    background-color: $customize_yellow !important;
+}
+
+.btn-customize_yellow {
+    background-color: $customize_yellow !important;
+
+    &:hover {
+        background-color: darken($color: $customize_yellow, $amount: 10%) !important;
+    }
+}
+
+.text-customize_green {
+    color: $customize_green;
+}
+
+.text-customize_white {
+    color: $customize_white;
+}
+
+.bg-customize_white {
+    background-color: $customize_white;
+
+    &:hover {
+        background-color: darken($color: $customize_white, $amount: 10%) !important;
+    }
+}
+
+.text-customize_dark2green {
+    color: $customize_dark2green;
+}
